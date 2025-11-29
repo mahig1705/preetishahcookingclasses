@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pure Homemade Jayna Purvak Items – Preeti Shah Cooking Classes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+  --bg: linear-gradient(135deg, #fff0ea, #fff9f3);
+
+  --card-bg: #ffffff;
+
+  --primary: #8c1020;      /* Dark Red */
+  --primary-soft: #ffd8dc;
+
+  --accent: #0e0605;       /* Bright Gold */
+
+  --text-main: #1b1b1b;
+  --text-muted: #5f5f5f;
+
+  --border-soft: #f5c9ce;
+
+  --shadow-soft: 0 16px 28px rgba(140, 16, 32, 0.35);
+
+  --radius-xl: 24px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+}
+
+
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        background: var(--bg);
+      color: var(--text-main);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(12px);
+      background: linear-gradient(to bottom, rgba(253, 248, 243, 0.95), rgba(253, 248, 243, 0.8));
+      border-bottom: 1px solid rgba(235, 208, 184, 0.5);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .logo-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 30% 20%, #ffe6bf, #c76b39);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    }
+
+    .logo-text-top {
+      font-size: 0.74rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .logo-text-main {
+      font-family: "Playfair Display", serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.3rem 0.8rem;
+      border-radius: var(--radius-pill);
+      background: rgba(61, 107, 75, 0.06);
+      border: 1px solid rgba(61, 107, 75, 0.12);
+      gap: 0.4rem;
+      color: var(--accent);
+    }
+
+    .contact-btn {
+      border-radius: var(--radius-pill);
+      border: none;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 10px 18px rgba(199, 107, 57, 0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .contact-btn span.icon {
+      font-size: 1.05rem;
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-1px);
+      background: #b45f31;
+      box-shadow: 0 14px 24px rgba(199, 107, 57, 0.4);
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 2rem 0 3rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.3rem 0.9rem;
+      border-radius: var(--radius-pill);
+      background: rgba(199, 107, 57, 0.06);
+      border: 1px solid rgba(199, 107, 57, 0.2);
+      font-size: 0.8rem;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .eyebrow-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--primary);
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.2rem, 4vw, 2.7rem);
+      margin: 0 0 0.8rem;
+      line-height: 1.15;
+    }
+
+    .hero-title span.highlight {
+      background: linear-gradient(120deg, #c76b39, #f29b4c);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 30rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      align-items: center;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .hero-phone {
+      font-size: 1.05rem;
+      font-weight: 600;
+    }
+
+    .hero-phone a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.7rem;
+      border-radius: var(--radius-pill);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(224, 203, 183, 0.9);
+      gap: 0.35rem;
+    }
+
+    .hero-meta-badge span.icon {
+      font-size: 1rem;
+    }
+
+    .hero-image-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      background: radial-gradient(circle at top left, #ffe0bf, #c76b39);
+      box-shadow: var(--shadow-soft);
+      min-height: 260px;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .hero-image-main {
+      flex: 2.4;
+      background-image: url("https://picsum.photos/seed/homemade_spices/900/700");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-image-side {
+      flex: 1.4;
+      display: flex;
+      flex-direction: column;
+      padding: 1.1rem;
+      gap: 0.7rem;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(
+        to top,
+        rgba(41, 32, 26, 0.92),
+        rgba(52, 35, 24, 0.9),
+        rgba(79, 49, 30, 0.85)
+      );
+      color: #fdf5ec;
+    }
+
+    .hero-image-side h3 {
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.92;
+    }
+
+    .hero-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      font-size: 0.78rem;
+    }
+
+    .hero-chip {
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-side-note {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      opacity: 0.92;
+    }
+
+    .hero-stamp {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      border-radius: 999px;
+      padding: 0.3rem 0.8rem;
+      background: rgba(253, 248, 243, 0.96);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-stamp span.icon {
+      font-size: 1rem;
+    }
+
+    /* SECTIONS */
+    .menu-section {
+      margin-bottom: 2.7rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .section-title {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      letter-spacing: 0.03em;
+    }
+
+    .section-tag {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .section-note {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .cards-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1.1rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .card-title-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .card-subtitle {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .card-pill {
+      font-size: 0.85rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-pill);
+      background: rgba(244, 227, 210, 0.9);
+      color: var(--primary);
+      white-space: nowrap;
+    }
+
+    .item-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      font-size: 0.9rem;
+    }
+
+    .item-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.6rem;
+    }
+
+    .item-name {
+      flex: 1;
+    }
+
+    .item-note {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-left: 0.25rem;
+    }
+
+    .item-price {
+      white-space: nowrap;
+      font-weight: 500;
+    }
+
+    /* CATEGORY IMAGE BANNERS */
+    .category-banner {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      margin: 1.2rem 0 1.7rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: 0;
+      min-height: 180px;
+      box-shadow: var(--shadow-soft);
+      background: #1d1511;
+    }
+
+    .category-banner-image {
+      background-image: url("https://picsum.photos/seed/spices_masala/900/700");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .category-banner-content {
+      padding: 1.2rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.4rem;
+      color: #fdf5ec;
+      background: linear-gradient(
+        135deg,
+        rgba(23, 16, 12, 0.95),
+        rgba(61, 40, 26, 0.97),
+        rgba(99, 62, 36, 0.96)
+      );
+    }
+
+    .category-banner-eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      opacity: 0.8;
+    }
+
+    .category-banner-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1.4rem;
+      margin: 0;
+    }
+
+    .category-banner-text {
+      font-size: 0.85rem;
+      opacity: 0.9;
+      max-width: 22rem;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(223, 198, 176, 0.85);
+      margin-top: 2rem;
+      background: rgba(253, 248, 243, 0.98);
+    }
+
+    .footer-inner {
+      padding: 1rem 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .footer-contact strong {
+      color: #444;
+    }
+
+    .footer-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .footer-link-btn {
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-pill);
+      border: 1px dashed rgba(199, 107, 57, 0.4);
+      font-size: 0.78rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 880px) {
+      .hero-grid,
+      .category-banner {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-image-card {
+        order: -1;
+      }
+
+      .category-banner-image {
+        min-height: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+      }
+
+      .hero {
+        padding-top: 1.4rem;
+      }
+
+      .hero-title {
+        font-size: 2rem;
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HEADER -->
+    <header>
+      <div class="container nav">
+        <div class="logo">
+          <div class="logo-badge">PS</div>
+          <div>
+            <div class="logo-text-top">Pure Homemade</div>
+            <div class="logo-text-main">Jayna Purvak Items</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <div class="tag-pill">
+            <span>👩‍🍳</span>
+            <span>By Preeti Shah Cooking Classes</span>
+          </div>
+          <button class="contact-btn" onclick="window.location.href='tel:+919769099423'">
+            <span class="icon">📞</span>
+            <span>Call: 97690 99423</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              <span>Preservative-free · Small-batch goodness</span>
+            </div>
+            <h1 class="hero-title">
+              Pure homemade <span class="highlight">soups, masalas & premixes</span> —
+              ready in minutes.
+            </h1>
+            <!-- <p class="hero-subtitle">
+              Handcrafted Jayna Purvak items made in small batches with love, clean ingredients and homestyle
+              flavours — perfect for your everyday kitchen, gifting and special occasions.
+            </p> -->
+
+            <div class="hero-contact-row">
+              <div>
+                <div class="hero-label">Order & Enquiries</div>
+                <div class="hero-phone">
+                  <a href="tel:+919769099423">
+                    <span>📞</span>
+                    <span>+91 97690 99423</span>
+                  </a>
+                </div>
+              </div>
+              <button class="contact-btn" onclick="window.location.href='https://wa.me/919769099423'">
+                <span class="icon">💬</span>
+                <span>WhatsApp to Order</span>
+              </button>
+            </div>
+
+            <div class="hero-meta">
+              <div class="hero-meta-badge">
+                <span class="icon">🥣</span>
+                <span>Instant soups · Masalas · Premixes</span>
+              </div>
+              <div class="hero-meta-badge">
+                <span class="icon">🚫</span>
+                <span>No preservatives · No added colours</span>
+              </div>
+            </div>
+          </div>
+
+          
+      </section>
+
+      <!-- MASALAS BANNER (WITH IMAGE PLACEHOLDER) -->
+      <!-- <section class="container">
+        <div class="category-banner">
+          <div
+            class="category-banner-image"
+            aria-label="Masala and spice image placeholder"
+          ></div>
+          <div class="category-banner-content">
+            <div class="category-banner-eyebrow">Signature Blends</div>
+            <h2 class="category-banner-title">Masalas that taste like home</h2>
+            <p class="category-banner-text">
+              Carefully roasted and ground spice blends for everyday cooking and special dishes — Punjabi, Pav Bhaji,
+              Tandoori, Biryani, Tea Masala and more.
+            </p>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- INSTANT SOUPS -->
+      <section class="container menu-section" id="soups">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Instant Soups</h2>
+            <div class="section-tag">50 g per packet</div>
+          </div>
+          <div class="section-note">Ready in minutes · Just add water</div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Everyday Favourites</div>
+                <div class="card-subtitle">Comforting homestyle flavours</div>
+              </div>
+              <div class="card-pill">₹70 per packet</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Manchow</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Lemon Coriander</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Tomato</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Sweet Corn</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Hot &amp; Sour</span>
+                <span class="item-price">₹70</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Premium Soup</div>
+                <div class="card-subtitle">Rich, nutty & wholesome</div>
+              </div>
+              <div class="card-pill">₹80 per packet</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Broccoli Almond</span>
+                <span class="item-price">₹80</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- MASALAS -->
+      <section class="container menu-section" id="masalas">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Masalas</h2>
+            <div class="section-tag">50 g packets · Custom blends</div>
+          </div>
+          <div class="section-note">Most masalas ₹60 · Special ones as marked</div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Indian Classics</div>
+                <div class="card-subtitle">50 g — ₹60 each (unless specified)</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Punjabi Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Pav Bhaji Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Garam Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Biryani Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Chhole Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Tandoori Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Chaat Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Sambhar Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Cheese Tomato Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Barbecue Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Schezwan Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Lemon Chilli Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Manchurian Masala</span>
+                <span class="item-price">₹60</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Special Masalas & Mixes</div>
+                <div class="card-subtitle">Different weights & pricing</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Italian Herbs</span>
+                <span class="item-price">₹70 (50 g)</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Tea Masala</span>
+                <span class="item-price">₹80 (50 g)</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Lemon Pudina Masala</span>
+                <span class="item-price">₹60 (50 g)</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Methi Masala</span>
+                <span class="item-price">₹70 (100 g)</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Sing Chutney</span>
+                <span class="item-price">₹150 (250 g)</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- POWDERS & HEALTH FOODS -->
+      <section class="container menu-section" id="powders">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Powders & Health Foods</h2>
+            <div class="section-tag">Versatile pantry essentials</div>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Flavour Powders</div>
+                <div class="card-subtitle">50 g — ₹60 each</div>
+              </div>
+              <div class="card-pill">Sprinkle · Mix · Cook</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Lemon Powder</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Tomato Powder</span>
+                <span class="item-price">₹60</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Soya Sauce Powder</span>
+                <span class="item-price">₹60</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Health Foods</div>
+                <div class="card-subtitle">Wholesome & nourishing</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Jowar Khichdi</span>
+                <span class="item-price">₹150 (250 g)</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- PREMIXES, WAFFLES -->
+      <section class="container menu-section" id="premixes">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Premixes & Waffles</h2>
+            <div class="section-tag">Baking · Gravy · Breakfast</div>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Cake & Brownie Premix</div>
+                <div class="card-subtitle">250 g — ₹140</div>
+              </div>
+              <div class="card-pill">Bake-ready</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Cake Premix</span>
+                <span class="item-price">₹140</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Brownie Premix</span>
+                <span class="item-price">₹140</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Gravy Premixes</div>
+                <div class="card-subtitle">100 g — ₹180 each</div>
+              </div>
+              <div class="card-pill">Restaurant-style gravies</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Red Gravy Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Golden Gravy Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">White Gravy Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Green Gravy Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Biryani Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Dal Makhni Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Pink Pasta Premix</span>
+                <span class="item-price">₹180</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Waffle Box</div>
+                <div class="card-subtitle">250 g — ₹400</div>
+              </div>
+              <div class="card-pill">Crispy & fluffy</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Waffle Premix Box</span>
+                <span class="item-price">₹400</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- DRINKS -->
+      <section class="container menu-section" id="drinks">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Milkshakes, Sharbats & Iced Teas</h2>
+            <div class="section-tag">Instant drink mixes</div>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Milkshake Mixes</div>
+                <div class="card-subtitle">100 g — ₹70 each</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Bubblegum</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Paan Shot</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Butterscotch</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Rose</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Chocolate</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Coffee</span>
+                <span class="item-price">₹70</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Sharbat Mixes</div>
+                <div class="card-subtitle">100 g — ₹70 each</div>
+              </div>
+              <div class="card-pill">Just mix & serve</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Variyali</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Shikanji</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Nimbu Sharbat</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Kala Khatta</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Bhindi Sharbat</span>
+                <span class="item-price">₹70</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Sugarcane Juice Mix</span>
+                <span class="item-price">₹90 (100 g)</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Iced Tea</div>
+                <div class="card-subtitle">100 g — ₹80 each</div>
+              </div>
+              <div class="card-pill">Serve chilled</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Lemon</span>
+                <span class="item-price">₹80</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Peach</span>
+                <span class="item-price">₹80</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Orange</span>
+                <span class="item-price">₹80</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Mixed Berry</span>
+                <span class="item-price">₹80</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Cold Coco</div>
+                <div class="card-subtitle">200 g — ₹150</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Cold Coco Mix</span>
+                <span class="item-price">₹150</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SEASON SPECIAL -->
+      <section class="container menu-section" id="season-special">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Season Special</h2>
+            <div class="section-tag">Festive sweets & farsan</div>
+          </div>
+          <div class="section-note">Rates flexible · Contact for bulk & festive orders</div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Seasonal Mithai</div>
+                <div class="card-subtitle">Prepared on order</div>
+              </div>
+              <div class="card-pill">Flexible pricing</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row"><span class="item-name">Khajur Pak</span></li>
+              <li class="item-row"><span class="item-name">Kaju Katri</span></li>
+              <li class="item-row"><span class="item-name">Dry Fruit Ladoo</span></li>
+              <li class="item-row"><span class="item-name">Ghughra</span></li>
+              <li class="item-row"><span class="item-name">Gulkand Barfi</span></li>
+              <li class="item-row"><span class="item-name">Penda</span></li>
+              <li class="item-row"><span class="item-name">Surat-Ni Ghari</span></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SNACKS & KHAKRA -->
+      <section class="container menu-section" id="snacks">
+        <div class="section-header">
+          <div class="section-title">
+            <h2>Snacks, Khakra & Vadi</h2>
+            <div class="section-tag">Crispy · Savoury · Tea-time</div>
+          </div>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Snacks</div>
+                <div class="card-subtitle">All prices per kg</div>
+              </div>
+              <div class="card-pill">Perfect with chai</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Farsi Puri</span>
+                <span class="item-price">₹650/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Rice Chakri</span>
+                <span class="item-price">₹600/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Chatpati Cholafali</span>
+                <span class="item-price">₹800/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Teekhi Puri</span>
+                <span class="item-price">₹650/kg</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Khakra</div>
+                <div class="card-subtitle">All prices per kg</div>
+              </div>
+              <div class="card-pill">Everyday crispy snack</div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Sada Khakra</span>
+                <span class="item-price">₹430/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Ghee Jeera Sada Khakra</span>
+                <span class="item-price">₹450/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Matth Khakra</span>
+                <span class="item-price">₹650/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Methi Khakra</span>
+                <span class="item-price">₹600/kg</span>
+              </li>
+              <li class="item-row">
+                <span class="item-name">Mugdi Khakra</span>
+                <span class="item-price">₹600/kg</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="card-title-group">
+                <div class="card-title">Vadi</div>
+                <div class="card-subtitle">Homestyle papad-style vadi</div>
+              </div>
+            </div>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-name">Choda-Ni Vadi</span>
+                <span class="item-price">₹500/kg</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div class="footer-contact">
+          <div><strong>Pure Homemade Jayna Purvak Items</strong></div>
+          <div>By Preeti Shah Cooking Classes</div>
+          <div>📞 <a href="tel:+919769099423">+91 97690 99423</a></div>
+        </div>
+        <div class="footer-actions">
+          <div class="footer-link-btn" onclick="window.location.href='https://wa.me/919769099423'">
+            <span>💬</span>
+            <span>WhatsApp to place your order</span>
+          </div>
+          <div class="footer-link-btn">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
